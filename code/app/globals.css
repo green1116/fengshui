@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Noto Sans SC', 'Noto Sans SC Fallback', system-ui, sans-serif;
+  --font-serif: 'Noto Serif SC', 'Noto Serif SC Fallback', serif;
+  
+  /* Color System - Traditional Chinese with modern touch */
+  --color-background: #fdfdfb;
+  --color-foreground: #1a1614;
+  
+  --color-muted: #f5f3ef;
+  --color-muted-foreground: #6b6560;
+  
+  --color-primary: #c4622d;
+  --color-primary-foreground: #ffffff;
+  
+  --color-secondary: #8b7355;
+  --color-secondary-foreground: #ffffff;
+  
+  --color-accent: #d4a574;
+  --color-accent-foreground: #1a1614;
+  
+  --color-border: #e8e4dd;
+  --color-ring: #c4622d;
+  
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
