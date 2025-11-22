@@ -4,7 +4,7 @@ export async function GET() {
   try {
     return NextResponse.json({ 
       success: true,
-      message: 'Next message API is working',
+      message: 'API is working',
       data: []
     })
   } catch (error) {
@@ -18,10 +18,9 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    
     return NextResponse.json({ 
       success: true,
-      message: 'Message processed successfully',
+      message: 'Message processed',
       data: []
     })
   } catch (error) {
